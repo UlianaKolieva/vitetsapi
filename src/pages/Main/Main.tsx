@@ -26,7 +26,7 @@ export default function Main() {
             <form onSubmit={(e) => handleSearch(e)}>
                 <Input value={searchValue} setValue={setValue}/><Button />
             </form>
-            <Feed />
+            <Feed movies={{searchRes}}/>
             <div id="searchResults"></div>
         </>
     )
